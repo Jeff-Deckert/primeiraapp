@@ -27,6 +27,9 @@ function Header (){
                      <Link style={{ textDecoration: 'none'}}to= '/Comentarios'>
                       <li>Comentarios</li>   
                     </Link>
+                    <Link style={{ textDecoration: 'none'}}to= '/Formulario'>
+                      <li>Formulario</li>   
+                    </Link>
                     
                     
                    

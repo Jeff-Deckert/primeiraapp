@@ -1,203 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
-* {
+/* style.css */
+body {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
+    background-color: #f0f0f0; /* Cor de fundo opcional */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
 
-body {
-    /* background-color: #390D02; */
-    background-image: url(https://www.1zoom.me/big2/23/123432-aleni.jpg);
-    background-repeat: no-repeat;
+  #banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    background-position: 50% 50%;
     background-size: cover;
-}
-
-#logo {
-    width: 150px;
-    height: 90px;
-}
-
-li {
-    list-style: none;
-    color:aliceblue;
-    cursor: pointer;
-    font-size: 19px;
-    transition: .5s;
-    font-family:'Kdam Thmor Pro', sans-serif;
-}
-
-li:hover {
-    color: #D21617;
-}
-
-.container {
-    /* background-color: #A52502; */
-    background-color: rgba(57,13,2, 0.4);
+    width: 100%;
     height: 600px;
-    width: 600px;
-    border-radius: 10px;
-    padding: 50px;
-    border-style:solid;
-    position: relative;
-    margin: 60px auto;
 }
-
-input[type=text] {
-    width: 80%;
-    padding: 12px;
-    border: 1px solid #020202;
-    border-radius: 4px;
-    margin-top: 6px; 
-    margin-bottom: 50px;
-    display: block;
-    color: #020202;
-}
-
-label[for=fname], [for=lname]{
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    font-family:'Kdam Thmor Pro', sans-serif;
-    text-shadow:  -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-
-
-textarea {
-    width: 80%;
-    padding: 12px;
-    border: 1px solid #020202;
-    border-radius: 4px;
-    margin-top: 6px; 
-    margin-bottom: 50px;
-    display: block;
-    color: #020202;
-    resize: vertical;
-    box-sizing: border-box;
-}
-
-label[for=subject]{
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    font-family:'Kdam Thmor Pro', sans-serif;
-    text-shadow:  -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-input[type=submit] {
-    background-color: #000B0D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-h1 {
-
-    font-family:'Kdam Thmor Pro', sans-serif;
-    padding: 10px;
-    text-align: center;
-}
-
-
-
-
-span {
-    color: white;
-    font-family:'Kdam Thmor Pro', sans-serif;  
-}
-
-
-.footer-navigation {
-    display: none;
-     
-}
-
-.footer-list {
+  
+.Form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
-}
+    margin-top: 20px; /* Espaço entre o cabeçalho e o formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    border-radius: 10px;
+    background-image: url('https://www.1zoom.me/big2/23/123432-aleni.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+  }
+  h1 {
+    background-color: transparent; /* Remove o fundo preto, se houver */
+    color: #D21617; /* Define a cor do texto do h1 */
+    font-size: 24px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento central do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
 
-
-@media(max-width: 768px){
-    .footer-navigation {
-        display: block;
-    }
-
-    nav {
-        display: none;
-    }
-
-    body {
-        /* background-color: #390D02; */
-        
-        background-repeat: no-repeat;
-        background-position: center;
-        
-
-       
-    }
-
-    .container {
-        /* background-color: #A52502; */
-        background-color: rgba(57,13,2, 0.4);
-        height: 600px;
-        width: 400px;
-        border-radius: 10px;
-        padding: 50px;
-        border-style:solid;
-        position: relative;
-        margin: 60px auto; 
-    }
-
-    input[type=text] {
-        width: 70%;
-        padding: 12px;
-        border: 1px solid #020202;
-        border-radius: 4px;
-        margin-top: 6px; 
-        margin-bottom: 50px;
-        display: block;
-        color: #020202;
-    }
-
-    input[type=submit] {
-        background-color: #000B0D;
-        color: white;
-        padding: 10px 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-
-}
-
-@media(max-width: 560px){
-    .footer-navigation {
-        display: block;
-    }
-    nav {
-        display: none;
-    }
-
-    .container {
-        /* background-color: #A52502; */
-        background-color: rgba(57,13,2, 0.4);
-        height: 600px;
-        width: 200px;
-        border-radius: 10px;
-        padding: 50px;
-        border-style:solid;
-        position: relative;
-        margin: 60px auto; 
-    }
-
-
-
-}
+  label {
+    background-color: rgba(0, 0, 0, 0.055); /* Fundo transparente */
+    color: white; /* Cor do texto nas labels */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    margin-bottom: 10px; /* Espaço vertical entre as labels */
+  }
+  
+  input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 25px;
+    width: 300px;
+    padding: 5px;
+    background-color: white; /* Define o fundo como branco */
+    color: gray; /* Define a cor do texto como preto */
+  }
+  
+  button {
+    width: 300px;
+    height: 40px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100px;
+  }
+  .TransparentForm {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value to control transparency */
+    border: none; /* Optional: Remove border */
+  }
+  
+  /* Additional styling for form elements if needed */
+  .TransparentForm label,
+  .TransparentForm input,
+  .TransparentForm textarea,
+  .TransparentForm button {
+    background-color: transparent;
+    border: none; /* Optional: Remove border */
+  }

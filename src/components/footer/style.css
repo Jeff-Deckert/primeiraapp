@@ -18,9 +18,6 @@ span {
 nav {
     width: 60%;
 }
-.footer-navigation {
-    display: none;
-}
 
 .footer-list {
     display: flex;
