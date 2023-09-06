@@ -39,6 +39,7 @@ li:hover {
 .container {
     /* background-color: #A52502; */
     background-color: rgba(57,13,2, 0.4);
+    text-align: center;
     height: 600px;
     width: 600px;
     border-radius: 10px;
@@ -57,7 +58,9 @@ input[type=text] {
     border: 1px solid #020202;
     border-radius: 4px;
     margin-top: 6px; 
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     color: #020202;
    
@@ -76,12 +79,12 @@ label[for=fname], [for=lname]{
 
 
 textarea {
-    width: 80%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #020202;
     border-radius: 4px;
     margin-top: 6px; 
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     display: block;
     color: #020202;
     resize: vertical;
