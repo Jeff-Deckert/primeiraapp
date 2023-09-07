@@ -4,28 +4,38 @@ import Header from '../../header/header';
 import Footer from '../../footer/footer';
 
 const Contato = () => {
+  const transparentBackground = { backgroundColor: 'transparent' };
+
   return (
     <>
       <Header />
-      
+      <div id='banner'></div>
+      <div className="FormContainer">
         <div className="container">
           <h1>Entre em Contato</h1>
-          
-          <label htmlFor="fname">Nome</label>
-          <input type="text" id="fname" name="firstname" placeholder="Seu nome" />
+          <form style={transparentBackground} action="./contato.html" method="post">
+            <div className="form-group">
+              <label htmlFor="fname">Nome</label>
+              <input type="text" id="fname" name="firstname" placeholder="Seu nome" style={transparentBackground} />
+            </div>
 
-          <label htmlFor="lname">Sobrenome</label>
-          <input type="text" id="lname" name="lastname" placeholder="Sobrenome" />
+            <div className="form-group">
+              <label htmlFor="lname">Sobrenome</label>
+              <input type="text" id="lname" name="lastname" placeholder="Sobrenome" style={transparentBackground} />
+            </div>
 
-          <label htmlFor="subject">Sua mensagem</label>
-          <textarea name="subject" id="subject" placeholder="Digite aqui a sua Mensagem"></textarea>
+            <div className="form-group">
+              <label htmlFor="subject">Sua mensagem</label>
+              <textarea name="subject" id="subject" placeholder="Digite aqui a sua Mensagem" style={transparentBackground}></textarea>
+            </div>
 
-          {/* Submit button */}
-          <button type="submit">Enviar</button>
+            {/* Botão de envio */}
+            <button type="submit">Enviar</button>
+          </form>
         </div>
-      
-      {/* You probably meant to use a footer element */}
-      <Footer/>
+      </div>
+      {/* Provavelmente você quis usar um elemento de rodapé */}
+      <Footer />
     </>
   );
 };

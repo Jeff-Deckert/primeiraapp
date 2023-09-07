@@ -14,6 +14,7 @@ function App() {
         <Route path='/contato' element={<Contato/>}/>
         <Route path='/fotos' element={<Fotos/>}/>
         <Route path='/comentarios' element={<Comentarios/>}/> {/* Use a primeira letra maiúscula */}
+        <Route path='/formulario' element={<Formulario/>}/>
       </Routes>
     </BrowserRouter>
   );
